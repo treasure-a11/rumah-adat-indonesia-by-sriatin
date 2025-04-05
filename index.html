@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Adat Indonesia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Rumah Adat Indonesia</h1>
+    <div class="language-switch">
+      <button onclick="setLanguage('id')">🇮🇩 Indonesia</button>
+      <button onclick="setLanguage('jv')">🧿 Jawa</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+  </header>
+
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Cari rumah adat...">
+    <select id="provinceFilter">
+      <option value="all">Semua Provinsi</option>
+    </select>
+  </section>
+
+  <main id="rumahAdatList" class="grid"></main>
+
+  <footer>
+    <p>&copy; 2025 Rumah Adat Nusantara - Media Pembelajaran</p>
+  </footer>
+
+  <script src="data/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
